@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    </style>
+    <title>Codificador</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="./assets/alura-logo.svg" alt="simbolo alura" />
+      </div>
+      <div class="codificacao">
+        <textarea
+          placeholder="Digite seu texto aqui"
+          name="texto"
+          id="texto"
+          class="texto"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="bottom-area">
+          <div class="atencao">
+            <img src="./assets/atencao.svg" alt="exclamação" />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="buttons">
+            <button onclick="criptografar()" class="criptografar">
+              Criptografar
+            </button>
+            <button onclick="descriptografar()" class="descriptografar">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="codificado">
+        <div class="card">
+          <div id="card-imagem" class="card-imagem">
+            <img src="./assets/lupa.svg" alt="Mulher com lupa" />
+            <label>Nenhuma mensagem encontrada</label>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+          <div id="card-conteudo" class="card-conteudo hidden">
+            <p class="text-codificado" id="text-codificado">
+            </p>
+            <button onclick="copiar()" class="copiar">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
