@@ -24,7 +24,6 @@ body {
   width: 680px;
 }
 
-
 .texto {
   border: none;
   outline: none;
@@ -68,6 +67,7 @@ body {
   height: 67px;
   padding: 24px;
   gap: 8px;
+  cursor: pointer;
 }
 
 .descriptografar {
@@ -81,6 +81,7 @@ body {
   height: 67px;
   padding: 24px;
   gap: 8px;
+  cursor: pointer;
 }
 
 .copiar {
@@ -94,6 +95,14 @@ body {
   height: 67px;
   padding: 24px;
   gap: 8px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+
+.copiar:focus {
+  transform: scaleX(1);
+  background: #0a3871;
+  color: #ffffff;
 }
 
 .card {
@@ -126,7 +135,7 @@ body {
   line-height: 29px;
   text-align: center;
   color: #495057;
-  padding: 0 4rem ;
+  padding: 0 4rem;
 }
 
 .card-imagem {
@@ -142,8 +151,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 28px  0;
-
+  padding: 28px 0;
 }
 
 .hidden {
